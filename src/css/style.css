@@ -1,0 +1,112 @@
+
+body {
+    background-color: #afadad;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(61, 20, 243);
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: #fdf5f5;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 400px; /* Define a largura do container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: #61c1ee; /* Cor de fundo (opcional) */
+    border: 2px solid #fffcfc; /* Borda (opcional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #f3efef;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    width: 80%; /* Largura do footer (entre 0% e 100%) */
+    margin: 0 auto; /* Centraliza horizontalmente o footer */
+  }
+  
+ footer p {
+    background-color: #fdfbff;
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    background-image: linear-gradient(to right, #f00, #00f, #0ff); 
+    font-size: 20px;
+    text-align: center;
+  }
+  footer p {
+    color: #fdf5f5; 
+    text-shadow: 0 0 10px #000; 
+    animation: shine 2s linear infinite; 
+  }
+  
+  @keyframes shine {
+    from { text-shadow: 0 0 10px #000; }
+    to { text-shadow: 0 0 20px #00f; }
+  }
+    
+  
+  
+
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+
+    label {
+        width: 50%; 
+    }
+
+    input, button {
+        width: calc(50% - 10px); 
+        margin-bottom: 10px; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+
+@media (min-width: 1024px) {
+    
+}
